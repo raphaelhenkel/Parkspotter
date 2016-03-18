@@ -1,0 +1,64 @@
+<!Doctype HTML>
+<html lang="de">
+
+<head>
+    <!-- -->
+    <title>Parkspotter</title>
+    <!-- connecting icon-->
+    <link rel="icon" href="res/icon.png" type=image/ico>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <!-- integrating jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- integrating jquery4mobile -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="Parkspotter_Theme.min.css" />
+    <!-- Linking local files -->
+    <link rel="stylesheet" href="stylesheet.css" />
+    <script src="script.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header -->
+        <div data-role="header">
+            <!-- Menu Button <a href="index.html" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid">Menu</a>-->
+            <!-- Logo -->
+            <span class="ui-title">
+            <a href="index.html">
+                <img src="res/logo.png" height="75" id="logo">
+                <h1>PARKSPOTTER</h1>
+            </a>
+
+
+            </span>
+
+        </div>
+        <!-- List of available cities -->
+        <form>
+            <input data-type="search" id="searchForCollapsibleSet">
+        </form>
+        <div id="siteList" data-role="collapsibleset" data-filter="true" data-inset="true" id="collapsiblesetForFilter" data-input="#searchForCollapsibleSet">
+
+        </div>
+        <br/>
+        <div data-role="collapsible" id="places-list">
+            <h4>Info</h4>
+            <p>Data is Provided by Deutsche Bahn AG under Creative Commons Attribution 4.0 International (CC BY 4.0) and is in Beta
+                <br/>Webapp created by Raphael Henkel under the MIT License
+                <br/> Created using jQuery4Mobile and jQuery
+                <br/> Location based on data from http://ip-api.com</p>
+        </div>
+        <script>
+            callAPI();
+        </script>
+    </div>
+</body>
+
+</html>

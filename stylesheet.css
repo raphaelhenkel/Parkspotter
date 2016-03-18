@@ -1,0 +1,38 @@
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+#ico {
+    height: auto;
+    width: auto;
+}
+
+#adspace {
+    width: 3000px;
+    height: auto;
+    position:absolute;
+
+}
+
+iframe{
+    width: auto;
+    height: 200px;
+    frameborder:"0";
+    style: "border:0"
+
+}
+h1{
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+}
+#adspace{
+    width: 320px;
+    height:auto;
+}
