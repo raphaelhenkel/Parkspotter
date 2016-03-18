@@ -52,11 +52,6 @@ function callAPI() {
             var textNode = document.createTextNode(parkJSON[var_allocation.site.id].displayName + ", Freie Plätze: " + parkJSON[var_allocation.site.id].text);
             textElement.appendChild(textNode);
 
-            //iframe
-            /*var iframeElement = document.createElement("iframe");
-            iframeElement.setAttribute("src", "https://www.google.com/maps/embed/v1/place?key=" + mapsApiKey +
-            "&q=" + parkJSON[var_allocation.site.id].siteName);
-            textElement.appendChild(iframeElement);*/
         });
     });
 
